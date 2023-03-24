@@ -1,19 +1,19 @@
 ﻿// Swig
-// Copyright (c) 2022 samrpf
+// Copyright (c) 2023 brown org.
 // See the LICENSE file for more information.
 
 using System;
 // using System.Threading;
 // using System.Xml;
 
-namespace SAMR.Swig;
+namespace Brown.Swig;
 
 public class Program
 {
-    protected static void ErrorBreak()
+    protected static void Unimplemented()
     {
         Console.WriteLine("Currently, this feature is not supported.");
-        Console.WriteLine("PRess any key to continue... ");
+        Console.WriteLine("Press any key to continue... ");
         Console.ReadKey();
     }
     public static void Main(string[] args)
@@ -22,11 +22,11 @@ public class Program
 
         // Quick Open
         if (args.Length == 1)
-            ErrorBreak();
+            Unimplemented();
 
         // Main Interface
         Console.WriteLine(" == Swig == ");
-        Console.WriteLine("Copyright (c) 2022 samrpf");
+        Console.WriteLine("Copyright (c) 2023 brown org.");
         Console.WriteLine("See the LICENSE file for more information.");
         Console.WriteLine();
 
@@ -41,15 +41,15 @@ public class Program
         switch (option)
         {
             case 1:
-                ErrorBreak();
+                Unimplemented();
                 break;
             case 2:
                 Console.Clear();
                 Console.WriteLine(" == Tools == ");
-                ErrorBreak();
+                Unimplemented();
                 break;
             default:
-                Console.WriteLine("Bad option");
+                Console.WriteLine("Bad option.");
                 break;
         }
     }
